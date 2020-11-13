@@ -16,6 +16,8 @@ window.onclick = function(e) {
     }
 }
 
-var handlers = {
-
+function showSlide() {
+    console.log(document.getElementById('title-buttons-column'));
+    document.getElementById("title-area").classList.toggle('slide-left');
+    document.getElementById("title-buttons-column").classList.toggle('title-btn');
 }

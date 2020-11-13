@@ -55,6 +55,15 @@ div {
     left: 300px;
     position: absolute;
     color: var(--secondary-accent-color);
+    -webkit-transition: 550ms;
+}
+
+.slide-left  {
+    left: 10px !important;
+    top: 10% !important;
+    width:  300px;
+    -webkit-transition: 550ms;
+    font-size: 1em;  
 }
 .title-heading {
     font-size: 2rem;
@@ -64,7 +73,7 @@ div {
     margin-bottom: 0; 
 }
 
-#comma {
+#yellow-accent {
     color: var(--main-accent-color)
 }
 
@@ -92,16 +101,19 @@ div {
 .title-info h3 {
     letter-spacing: 3px;
     font-weight: 300;
-    margin-left: ;
 }
 
 .title-buttons {
     margin: 40px;
+}
+.title-btn {
+    margin: 15px auto auto 0;
 
 }
 
+
 .title-buttons a{
-    border: white solid 1px;
+    border: var(--main-accent-color) solid 1px;
     margin: 20px;
     border-radius: 10px;
     padding: 15px;
@@ -138,11 +150,11 @@ div {
     background-size: cover;
     background: var(--secondary-dark-color);
     background-repeat:no-repeat;
-    background: -webkit-linear-gradient( to left, var(--secondary-dark-color),#172946);
-    background: -moz-linear-gradient( to left, var(--secondary-dark-color),#172946);
-    background: -ms-linear-gradient( to left, var(--secondary-dark-color),#172946);
-    background: -o-linear-gradient( to left, var(--secondary-dark-color),#172946);
-    background: linear-gradient( to left, var(--secondary-dark-color),#122542);
+    background: -webkit-linear-gradient( to left, var(--secondary-dark-color),#162944);
+    background: -moz-linear-gradient( to left, var(--secondary-dark-color),#162944);
+    background: -ms-linear-gradient( to left, var(--secondary-dark-color),#162944);
+    background: -o-linear-gradient( to left, var(--secondary-dark-color),#162944);
+    background: linear-gradient( to left, var(--secondary-dark-color),#162944);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -157,7 +169,7 @@ div {
 .spinny {
     -webkit-transition: 500ms;
     -webkit-transform: rotateZ(-90deg);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .nav-btn:hover .spinny{
     -webkit-transition: 500ms;
@@ -195,6 +207,7 @@ footer {
     color: var(--main-accent-color);
     background-color: var(--secondary-dark-color);
 }
+
 
 
 @media only screen and (max-width:1367px) {

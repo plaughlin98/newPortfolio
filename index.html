@@ -12,15 +12,15 @@
     <div class="wrapper">
             <section id="title-area">
                 <div class="title-heading">
-                    <h1>Peter Laughlin<span id="comma">,</span></h1>
+                    <h1>Peter Laughlin<span id="yellow-accent">,</span></h1>
                     <h2>Web Developer</h2>
                 </div>
                 <div class="title-info">
-                    <h3>JavaScript | ReactJS | HTML | CSS</h3>
+                    <h3><span id="yellow-accent">|</span> Javascript<span id="yellow-accent">|</span> ReactJS <span id="yellow-accent">|</span> HTML <span id="yellow-accent">|</span> CSS <span id="yellow-accent">|</span></h3>
                 </div>
-                <div class="title-buttons">
-                    <a>Projects</a>
-                    <a>Profile</a>
+                <div class="title-buttons" id="title-buttons-column">
+                    <a onclick="showSlide()" id="projects-btn">Projects</a>
+                    <a onclick="showSlide()"id='about-btn'>About</a>
                 </div>
             </section>
             <section id="top-nav">
@@ -31,7 +31,6 @@
                 <div id="myDropdown" class="nav-content">
                         <a href="./index.html">Home</a>
                         <a>Projects</a>
-                        <a>Profile</a>
                         <a>Contact</a>
                         <a>CV</a>
                     </div>
