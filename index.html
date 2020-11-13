@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+            <section id="title-area">
+                <div class="title-heading">
+                    <h1>Peter Laughlin<span id="comma">,</span></h1>
+                    <h2>Web Developer</h2>
+                </div>
+                <div class="title-info">
+                    <h3>JavaScript | ReactJS | HTML | CSS</h3>
+                </div>
+                <div class="title-buttons">
+                    <a>Projects</a>
+                    <a>Profile</a>
+                </div>
+            </section>
+            <section id="top-nav">
+                <nav class="dropdown">
+                    <button onclick="showDropdown()" class="nav-btn">
+                        <p class="spinny">|||</p>
+                    </button>
+                <div id="myDropdown" class="nav-content">
+                        <a href="./index.html">Home</a>
+                        <a>Projects</a>
+                        <a>Profile</a>
+                        <a>Contact</a>
+                        <a>CV</a>
+                    </div>
+                </nav>
+            </section>
+            <!-- <section> Big Page of where the projecst will be listed</section> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
