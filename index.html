@@ -19,8 +19,8 @@
                     <h3><span id="yellow-accent">|</span> Javascript <span id="yellow-accent">|</span> ReactJS <span id="yellow-accent">|</span> HTML <span id="yellow-accent">|</span> CSS <span id="yellow-accent">|</span></h3>
                 </div>
                 <div class="title-buttons" id="title-buttons-column">
-                    <a onclick="showSlide()" id="projects-btn">Projects</a>
-                    <a onclick="showSlide()"id='about-btn'>About</a>
+                    <a onclick="showSlide('projects')" id="projects-btn">Projects</a>
+                    <a onclick="showSlide('about')"id='about-btn'>About</a>
                 </div>
             </section>
             <section id="top-nav">
@@ -29,17 +29,38 @@
                         <span class="spinny">|||</span>
                     </button>
                 <div id="myDropdown" class="nav-content">
-                        <a href="./index.html">Home</a>
-                        <a>Projects</a>
-                        <a>Contact</a>
-                        <a>CV</a>
-                        <a>GitHub</a>
-                        <a>LinkedIn</a>
+                        <a onclick="showSlide('about')">About</a>
+                        <a onclick="showSlide('projects')">Projects</a>
+                        <a href="mailto:plaughlin98@gmail.com">Contact</a>
+                        <a href="./resources/PeterLaughlinResume.pdf">CV</a>
+                        <a target="_blank" href="https://github.com/plaughlin98">GitHub</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/peter-laughlin-6a9a05107">LinkedIn</a>
                     </div>
                 </nav>
             </section>
             <!-- <section> Big Page of where the projecst will be listed</section> -->
             <section id="popup-projects" class="hide-flex">
+                <div class="project-title">
+                    <p>Project Title</p>
+                </div>
+                    <div class="project-1">
+                        <p>IMG / Link / GIf?</p>
+                        <p>Description 1</p>
+                    </div>
+                    <div class="project-2">
+                        <p>IMG / Link / GIf?</p>
+                        <p>Description 2</p>
+                    </div>
+                    <div class="project-3">
+                        <p>IMG / Link / GIf?</p>
+                        <p>Description 3</p>
+                    </div>
+                    <div class="project-4">
+                        <p>IMG / Link / GIf?</p>
+                        <p>Description 4</p>
+                    </div>
+            </section>
+            <section id="popup-about" class="hide-flex">
                 <div class="project-title">
                     <p>Project Title</p>
                 </div>

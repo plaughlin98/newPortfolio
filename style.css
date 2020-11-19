@@ -231,7 +231,7 @@ footer {
                          "project1 project2"
                          "project3 project4";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
     top: 14.5%;
     left: 16.5%;
     position: absolute;
@@ -267,6 +267,17 @@ footer {
     grid-area: project4;
     border: solid 1px red;
     grid-column: 2 / span 1;
+}
+
+#popup-about {
+    display: flex;
+    flex-direction: column;
+    top: 14.5%;
+    left: 16.5%;
+    position: absolute;
+    border: solid white 1px;
+    min-width: 75vw;
+    min-height: 80vh;
 }
 
 

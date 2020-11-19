@@ -16,10 +16,37 @@ window.onclick = function(e) {
     }
 }
 
-function showSlide() {
-    var projects = document.getElementById("popup-projects")
-    projects.classList.toggle('show-flex')
-    projects.classList.toggle('hide-flex')
-    document.getElementById("title-area").classList.toggle('slide-left');
-    document.getElementById("title-buttons-column").classList.toggle('title-btn');
+
+//PopUp Slide Functions - This is super messy, but it works.. , figure out how to condense
+
+var projects = document.getElementById("popup-projects");
+var about = document.getElementById('popup-about');
+var titleArea = document.getElementById("title-area");
+var titleBtnColumns = document.getElementById("title-buttons-column");
+
+function showSlide(popup) {
+    if (popup == 'projects') {
+        if (about.classList == 'show-flex') {
+            about.classList.toggle('show-flex');
+            about.classList.toggle('hide-flex');
+            titleArea.classList.toggle('slide-left');
+            titleBtnColumns.classList.toggle('title-btn');
+        }
+        projects.classList.toggle('show-flex');
+        projects.classList.toggle('hide-flex');
+        titleArea.classList.toggle('slide-left');
+        titleBtnColumns.classList.toggle('title-btn');
+    } else if (popup == 'about') {
+        if (projects.classList == 'show-flex') {
+            projects.classList.toggle('show-flex');
+            projects.classList.toggle('hide-flex');
+            titleArea.classList.toggle('slide-left');
+            titleBtnColumns.classList.toggle('title-btn');
+        }
+        about.classList.toggle('show-flex')
+        about.classList.toggle('hide-flex')
+        titleArea.classList.toggle('slide-left');
+        titleBtnColumns.classList.toggle('title-btn');
+    }
 }
+
