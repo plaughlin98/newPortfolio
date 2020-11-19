@@ -25,8 +25,8 @@ var titleArea = document.getElementById("title-area");
 var titleBtnColumns = document.getElementById("title-buttons-column");
 
 function showSlide(popup) {
-    if (popup === 'projects') {
-        if (about.classList === 'show-flex') {
+    if (popup == 'projects') {
+        if (about.classList == 'show-flex') {
             about.classList.toggle('show-flex');
             about.classList.toggle('hide-flex');
             titleArea.classList.toggle('slide-left');
@@ -36,8 +36,8 @@ function showSlide(popup) {
         projects.classList.toggle('hide-flex');
         titleArea.classList.toggle('slide-left');
         titleBtnColumns.classList.toggle('title-btn');
-    } else if (popup === 'about') {
-        if (projects.classList === 'show-flex') {
+    } else if (popup == 'about') {
+        if (projects.classList == 'show-flex') {
             projects.classList.toggle('show-flex');
             projects.classList.toggle('hide-flex');
             titleArea.classList.toggle('slide-left');
