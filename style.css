@@ -24,7 +24,7 @@ html {
     background: -ms-linear-gradient( to left, var(--secondary-dark-color),var(--hover-dark));
     background: -o-linear-gradient( to left, var(--secondary-dark-color),var(--hover-dark));
     background: linear-gradient( to left, var(--secondary-dark-color),var(--hover-dark));
-    color: var(--main-whites-color);
+    color: var(--main-white-color);
     font-family: 'IBM Plex Serif', serif;
 }
 /* main {
@@ -47,6 +47,31 @@ div {
     width: 100%;
 }
 
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--main-accent-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white-color);
+}
+
 .title-area {
     display: flex;
     flex-direction: column;
@@ -54,7 +79,7 @@ div {
     top: 32%;
     left: 300px;
     position: absolute;
-    color: var(--secondary-accent-color);
+    color: var(--main-white-color);
     -webkit-transition: 600ms;
 }
 
@@ -85,12 +110,6 @@ div {
 
 .title-heading h2 {
     margin: 0 0 0;
-}
-
-.title-heading * {
-    font-size: 4rem;
-    font-weight: 300;
-    
 }
 
 .title-info {
@@ -166,7 +185,6 @@ div {
     z-index: 10;
 }
 
-
 .spinny {
     -webkit-transition: 500ms;
     -webkit-transform: rotateZ(-90deg);
@@ -175,6 +193,7 @@ div {
     display: block;
     z-index: -1;
 }
+
 .nav-btn:hover .spinny{
     -webkit-transition: 500ms;
     -webkit-transform: rotateZ(90deg);
@@ -231,53 +250,94 @@ footer {
                          "project1 project2"
                          "project3 project4";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr;
-    top: 14.5%;
-    left: 16.5%;
+    grid-template-rows: .2fr 1fr 1fr;
+    left: 17.5%;
     position: absolute;
-    border: solid white 1px;
-    min-width: 75vw;
+    max-width: 75vw;
     min-height: 80vh;
+    grid-row-gap: 3px;
+    margin-right: 50px;
 }
 
 .project-title {
     grid-area: title;
-    border: solid 1px red;
     grid-column: 1 / span 2;
+    text-align: center;
+}
 
+#popup-projects img {
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 340px;
+    height: 250px;
+    box-shadow: 1px 1px 5px 2px black;
+    padding-bottom: 0;
 }
-.project-1 {
+
+.project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin: 10px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-box:hover {
+    box-shadow: 1px 1px 4px 1px var(--main-accent-color);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: 500ms;
+}
+
+.project-box > * {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#project-1 {
     grid-area: project1;
-    border: solid 1px red;
     grid-column: 1 / span 1;
-    grid-row: 2;
+    grid-row: 3;
+    
 }
-.project-2 {
+#project-2 {
     grid-area: project2;
-    border: solid 1px red;
     grid-column: 2 / span 1;
+    grid-row: 3;
+}
+#project-3 {
+    grid-area: project3;
+    grid-column: 1 / span 2;
+    justify-content: space-between;
     grid-row: 2;
 }
-.project-3 {
-    grid-area: project3;
-    border: solid 1px red;
-    grid-column: 1 / span 1;
+#project-3 img {
+    width: 500px;
+    height: 300px;
 }
-.project-4 {
+
+#project-3 div {
+    left: 4%;
+    width: 60%;
+    height: 300px;
+}
+
+#project-4 {
     grid-area: project4;
-    border: solid 1px red;
     grid-column: 2 / span 1;
 }
 
 #popup-about {
     display: flex;
     flex-direction: column;
-    top: 14.5%;
-    left: 16.5%;
+    left: 17.5%;
     position: absolute;
-    border: solid white 1px;
     min-width: 75vw;
     min-height: 80vh;
+    grid-row-gap: 3px;
 }
 
 
@@ -286,11 +346,15 @@ footer {
 
 @media only screen and (max-width:1800px) {
     .slide-left  {
-        left: 10px ;
+        display: flex;
+        flex-direction: row;
+        left: 50%;
         top: 0;
         width:  300px;
-        -webkit-transition: 600ms;
+        -webkit-transition: 00ms;
         font-size: 1em; 
+        height: 30vh;
+        visibility: hidden;
     }
     .title-heading {
         font-size: 1rem;
@@ -331,8 +395,31 @@ footer {
         letter-spacing: 3px;
         font-weight: 300;
     }
-    
-
+    #popup-projects {
+        display: grid;
+        grid-template-areas: "title title"
+                             "project1 project2"
+                             "project3 project4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr 1fr 1fr;
+        top: 10%;
+        left: 10.5%;
+        position: absolute;
+        border: solid white 1px;
+        min-width: 80vw;
+        min-height: 80vh;
+    }
+    #popup-about {
+        display: flex;
+        flex-direction: column;
+        top: 10%;
+        left: 10.5%;
+        position: absolute;
+        border: solid white 1px;
+        min-width: 80vw;
+        min-height: 80vh;
+    }
+    }
 
 }
 
