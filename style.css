@@ -9,6 +9,10 @@
 
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 html {
     overflow: hidden;
     min-height: 100vh;
@@ -334,13 +338,51 @@ footer {
     display: flex;
     flex-direction: column;
     left: 17.5%;
+    top: 20%;
     position: absolute;
-    min-width: 75vw;
-    min-height: 80vh;
+    max-width: 75vw;
+    max-height: 80vh;
+    height: 100%;
     grid-row-gap: 3px;
+    margin-right: 50px;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
 }
 
+.bio-section > * {
+    text-align: center;
+    font-size: 2rem;
+}
 
+.profile-pic {
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 100%;
+    box-shadow: #363636 5px 5px 5px 5px;
+    margin: 0 2% 0 0;
+}
+
+.list-header {
+    color: var(--main-dark-color);
+    font-weight: 800;
+}
+
+.skills-container {
+    margin-left: 15%;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 900px;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--hover-dark);
+}
 
 
 
